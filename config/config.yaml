@@ -1,0 +1,39 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+  grpc_port: 9090
+  read_timeout: "30s"
+  write_timeout: "30s"
+  idle_timeout: "60s"
+
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  database: 0
+  max_retries: 3
+  pool_size: 10
+  dial_timeout: "5s"
+
+worker:
+  count: 4
+  max_concurrency: 100
+  poll_interval: "1s"
+  job_timeout: "5m"
+  graceful_shutdown_timeout: "30s"
+  batch_size: 10
+
+scheduler:
+  enabled: true
+  poll_interval: "30s"
+  batch_size: 100
+
+metrics:
+  enabled: true
+  port: 9091
+  path: "/metrics"
+  namespace: "job_queue_system"
+
+logging:
+  level: "info"      # debug, info, warn, error
+  format: "json"     # json, text 
