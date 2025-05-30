@@ -1,6 +1,6 @@
 # ZipLine - High-Performance Job Queue System
 
-A scalable, reliable, and fast job queue system built in Go by **Dishank Chauhan**. ZipLine is similar to Sidekiq (Ruby) or Bull (Node.js) and is designed as a developer tool or infrastructure component that can be embedded into modern microservices.
+A scalable, reliable, and fast job queue system built in Go. ZipLine is similar to Sidekiq (Ruby) or Bull (Node.js) and is designed as a developer tool or infrastructure component that can be embedded into modern microservices.
 
 ## 🚀 Features
 
